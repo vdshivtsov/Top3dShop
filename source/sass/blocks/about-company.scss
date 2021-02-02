@@ -1,0 +1,102 @@
+.about-company__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 280px;
+  width: 100%;
+  align-content: space-between;
+  padding-top: 30px;
+}
+
+@media (max-width: $m-breakpoint) {
+  .about-company__container {
+    flex-wrap: nowrap;
+    height: auto;
+    align-content: stretch;
+  }
+}
+
+.about-company__subtitle {
+  width: 350px;
+  font-family: 'SF Pro Display';
+  font-size: 27px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: $m-breakpoint) {
+  .about-company__subtitle {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.about-company__send-resume {
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.7px;
+  color: #FFFFFF;
+  background: #D2001C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 44px;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: $m-breakpoint) {
+  .about-company__send-resume {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.about-company__personal-data-text {
+  width: 235px;
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.7px;
+  color: $disclamer-color;
+}
+
+@media (max-width: $m-breakpoint) {
+  .about-company__personal-data-text {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: $m-breakpoint) {
+  .about-company__personal-data-text {
+    margin-bottom: 15px;
+  }
+}
+
+.about-company__text {
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.7px;
+  text-align: justify;
+  color: $second-text-color;
+  width: 695px;
+}
+
+.about-company__text p {
+  @include reset;
+  margin-bottom: 15px;
+}
+
+@media (max-width: $m-breakpoint) {
+  .about-company__text {
+    width: 100%;
+  }
+}

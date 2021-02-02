@@ -1,0 +1,29 @@
+.ofice {
+  @include reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $xl-breakpoint) {
+  .ofice {
+    width: 100%;
+  }
+}
+
+.ofice__city {
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.ofice__city::before {
+  @include marked;
+}
+
+.ofice__phone {
+  margin-right: 20px;
+}
+
+.ofice__phone a {
+  color: inherit;
+}

@@ -1,0 +1,14 @@
+.main {
+  padding-top: 50px;
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media (max-width: $xxl-breakpoint) {
+  .main {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}

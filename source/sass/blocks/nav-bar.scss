@@ -1,0 +1,24 @@
+.nav-bar {
+  width: 100%;
+}
+.nav_bar__list {
+  @include reset-list;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: $container-max-width) {
+  .nav_bar__list {
+    flex-wrap: wrap;
+  }
+
+  .nav-bar__item {
+    margin-right: 15px;
+  }
+}
+
+.nav-bar__item a {
+  color: $first-text-color;
+}

@@ -1,0 +1,29 @@
+.socials {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  align-items: center;
+  margin-left: 36px;
+}
+
+.socials__item a {
+  display:  block;
+  width: 18px;
+  height: 18px;
+}
+
+.socials__item_telegram a {
+  background-image: url(../img/Frame-1.svg);
+  background-repeat: no-repeat;
+}
+
+.socials__item_skype {
+  background-image: url(../img/Frame-2.svg);
+  background-repeat: no-repeat;
+}
+
+.socials__item_call {
+  background-image: url(../img/Frame.svg);
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,50 @@
+/**** sourse from https://a11yproject.com/posts/how-to-hide-content ****/
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  width: 100%;
+  min-width: 578px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  @include reset;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* added line */
+}
+
+.container {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -1,0 +1,107 @@
+.proofs {
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+
+.proofs__subtitle {
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.7px;
+  color: #222222;
+  margin-bottom: 50px;
+}
+
+@media (max-width: $l-breakpoint) {
+  .proofs__subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+.proofs__list {
+  @include reset-list;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: $l-breakpoint) {
+  .proofs__list {
+    flex-direction: column;
+  }
+}
+
+.proofs__item:nth-child(1) {
+  margin-right: 148px;
+}
+
+.proofs__item:nth-child(2) {
+  margin-right: 177px;
+}
+
+@media (max-width: $l-breakpoint) {
+  .proofs__item {
+    margin-bottom: 15px;
+  }
+
+  .proofs__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $container-max-width) {
+  .proofs__item:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .proofs__item:nth-child(2) {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: $xl-breakpoint) {
+  .proofs__item:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  .proofs__item:nth-child(2) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $l-breakpoint) {
+  .proofs__item:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .proofs__item:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+.proofs__item a {
+  font-family: 'SF Pro Display';
+  font-size: 16px;
+  line-height: 19px;
+  color: $second-text-color;
+}
+
+.proofs__item span {
+  text-decoration-line: underline;
+  margin-right: 15px;
+}
+
+.proofs__item a:hover {
+  color: $red-color;
+}
+
+.proofs__item svg {
+  stroke: $second-text-color;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.proofs__item a:hover svg {
+  stroke: $red-color;
+}

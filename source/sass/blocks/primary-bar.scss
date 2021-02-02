@@ -1,0 +1,100 @@
+.primary-bar {
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: $l-breakpoint) {
+  .primary-bar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $container-max-width) {
+  .primary-bar__item {
+    margin-right: 15px;
+  }
+
+  .primary-bar__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.primary-bar__item_search {
+  flex-grow: 1;
+  max-width: 521px;
+}
+
+.primary-bar__logo img {
+  min-width: 64px;
+}
+
+.primary-bar__slogan {
+  @include reset;
+  font-style: italic;
+  font-weight: 400;
+  min-width: 132px;
+}
+
+.primary-bar__slogan span {
+  color: $red-color;
+}
+
+.primary-bar__ya-market {
+  display: block;
+  background-color: #FFFFFF;
+  background-image: url(../img/ya-market.png);
+  background-repeat: no-repeat;
+  background-size: 81px 50px;
+  background-position: center;
+  width: 105px;
+  height: 60px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+
+.primary-bar__login-link {
+  position: relative;
+  color: #222222;
+}
+
+.primary-bar__login-link::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: -4px;
+  width: 22px;
+  height: 22px;
+  background-image:url(../img/login.svg);
+  background-repeat: no-repeat;
+}
+
+.primary-bar__item_login {
+  padding-left: 25px;
+}
+
+.primary-bar__cart-link {
+  position: relative;
+  display: block;
+  padding: 9px 16px 9px 48px;
+  color: #FFFFFF;
+  width: 160px;
+  height: 36px;
+  background: $red-color;
+  border-radius: 4px;
+}
+
+.primary-bar__cart-link::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  background-image:url(../img/cart.svg);
+  background-repeat: no-repeat;
+}

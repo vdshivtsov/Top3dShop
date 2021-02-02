@@ -1,0 +1,23 @@
+.contacts {
+  @include reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts a {
+  color: $first-text-color;
+}
+
+.contacts > * {
+  margin-left: 36px;
+}
+
+@media (max-width: $xl-breakpoint) {
+  .contacts {
+    width: 100%;
+  }
+
+  .contacts > * {
+    margin: 0;
+  }
+}

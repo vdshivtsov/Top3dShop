@@ -1,0 +1,27 @@
+.catalog-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: $container-max-width) {
+  .catalog-bar {
+    flex-wrap: wrap;
+  }
+
+  .catalog-bar__item {
+    margin-right: 15px;
+  }
+}
+
+.catalog-bar__item a {
+  position: relative;
+  color: $first-text-color;
+  font-weight: 600  ;
+}
+
+.catalog-bar__item a::before {
+  @include marked;
+  background-image:url(../img/mark_gray.svg);
+}

@@ -1,0 +1,71 @@
+@font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: local("Open Sans"),
+  local("OpenSans-Bold"),
+  url("../fonts/OpenSans-Bold.woff") format("woff"),
+  url("../fonts/OpenSans-Bold.woff2") format("woff2")
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: local("Open Sans"),
+  local("OpenSans-Italic"),
+  url("../fonts/OpenSans-Italic.woff2") format("woff2"),
+  url("../fonts/OpenSans-Italic.woff") format("woff")
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: local("Open Sans"),
+  local("OpenSans-Regular"),
+  url("../fonts/OpenSans-Regular.woff") format("woff"),
+  url("../fonts/OpenSans-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: local("Open Sans"),
+  local("OpenSans-SemiBold"),
+  url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+  url("../fonts/OpenSans-SemiBold.woff2") format("woff2")
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "SF Pro Display";
+
+  font-display: swap;
+  src: local("SF Pro Display"),
+  local("SF-Pro-Display-Regular"),
+  url("../fonts/SF-Pro-Display-Regular.woff") format("woff"),
+  url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "SF Pro Text";
+
+  font-display: swap;
+  src: local("SF Pro Text"),
+  local("SF-Pro-Text-Regular"),
+  url("../fonts/SF-Pro-Text-Regular.woff") format("woff"),
+  url("../fonts/SF-Pro-Text-Regular.woff2") format("woff2")
+}
